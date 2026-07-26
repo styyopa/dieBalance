@@ -1,0 +1,80 @@
+[
+  {
+    "timestamp": "2026-07-24T23:49:48",
+    "prediction": "Low",
+    "confidence": 0.95,
+    "nutritional_values": {
+      "name": "Apple",
+      "carbs": 14.0,
+      "glycemic_index": 36.0,
+      "protein": 0.3,
+      "fiber": 2.4,
+      "fat": 0.2
+    }
+  },
+  {
+    "timestamp": "2026-07-24T23:50:12",
+    "prediction": "Medium",
+    "confidence": 0.9741666666666666,
+    "nutritional_values": {
+      "name": "Banana",
+      "carbs": 23.0,
+      "glycemic_index": 51.0,
+      "protein": 1.1,
+      "fiber": 2.6,
+      "fat": 0.3
+    }
+  },
+  {
+    "timestamp": "2026-07-25T21:34:02",
+    "prediction": "Low",
+    "confidence": 0.95,
+    "nutritional_values": {
+      "name": "Apple",
+      "carbs": 14.0,
+      "glycemic_index": 36.0,
+      "protein": 0.3,
+      "fiber": 2.4,
+      "fat": 0.2
+    }
+  },
+  {
+    "timestamp": "2026-07-25T21:34:28",
+    "prediction": "Medium",
+    "confidence": 0.9741666666666666,
+    "nutritional_values": {
+      "name": "Banana",
+      "carbs": 23.0,
+      "glycemic_index": 51.0,
+      "protein": 1.1,
+      "fiber": 2.6,
+      "fat": 0.3
+    }
+  },
+  {
+    "timestamp": "2026-07-25T21:35:15",
+    "prediction": "High",
+    "confidence": 0.96,
+    "nutritional_values": {
+      "name": "Potato chips",
+      "carbs": 53.0,
+      "glycemic_index": 56.0,
+      "protein": 6.6,
+      "fiber": 4.8,
+      "fat": 35.0
+    }
+  },
+  {
+    "timestamp": "2026-07-25T21:35:59",
+    "prediction": "Low",
+    "confidence": 0.95,
+    "nutritional_values": {
+      "name": "Apple",
+      "carbs": 14.0,
+      "glycemic_index": 36.0,
+      "protein": 0.3,
+      "fiber": 2.4,
+      "fat": 0.2
+    }
+  }
+]

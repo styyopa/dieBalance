@@ -1,30 +1,27 @@
-import csv
+import pandas as pd
 
-def save_float(value):
-    try:
-        return float(value) if value else 0.0
-    except ValueError:
-        return 0.0 
-    
-def load_foods():
+RENAME_MAP = {
+    "Carbohydrates": "carbs",
+    "Glycemic Index": "glycemic_index",
+    "Protein": "protein",
+    "Fiber": "fiber",
+    "Fat": "fat",
+}
 
-    foods = []
 
-    with open("data/foods.csv", newline="", encoding="utf-8") as file:
-        
-        reader = csv.DictReader(file)
-        
-        for row in reader:
-            
-            food = {
-                "name": row("name"),
-                "carbs": save_float(row("Carbohydrates")),
-                "glycemic_index": save_float(row("Glycemic Index")),
-                "protein": save_float(row("Protein")),
-                "fiber": save_float(row("Fiber")),
-                "fat": save_float(row("Fat")) 
-            }
-    
-        foods.append(food)
+def load_foods(path: str = "data/foods.csv") -> pd.DataFrame:
+    df = pd.read_csv(path)
+    return df.rename(columns=RENAME_MAP)
 
-    return foods
+
+def get_food_by_name(df: pd.DataFrame, name: str):
+    match = df[df["name"].str.lower() == name.lower()]
+    if match.empty:
+        return None
+    return match.iloc[0]
+
+
+if __name__ == "__main__":
+    foods = load_foods()
+    print(foods.head())
+    print(f"\nTotal products loaded: {len(foods)}")
